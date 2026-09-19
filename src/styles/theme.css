@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=JetBrains+Mono:wght@500;700&display=swap");
+
+:root {
+  /* Chronos — tema próprio (verde esmeralda + navy) */
+  --primary-light: #34d399;
+  --primary: #10b981;
+  --primary-dark: #047857;
+
+  --gray-100: #e8eef8;
+  --gray-200: #c9d4e8;
+  --gray-300: #9aa8c7;
+  --gray-400: #5c6b8a;
+  --gray-500: #455372;
+  --gray-600: #334155;
+  --gray-700: #1e293b;
+  --gray-800: #0f172a;
+  --gray-900: #020617;
+
+  --link-color: #34d399;
+  --link-hover: #6ee7b7;
+
+  --success: #22c55e;
+  --warning: #eab308;
+  --error: #ef4444;
+  --info: #38bdf8;
+
+  --text-over-primary: #022c22;
+  --text-over-primary-dark: #ecfdf5;
+  --text-over-primary-light: #022c22;
+  --text-over-success: #052e16;
+  --text-over-warning: #422006;
+  --text-over-error: #fef2f2;
+  --text-over-info: #0c4a6e;
+
+  --text-default: #e2e8f0;
+  --text-muted: #94a3b8;
+
+  --disabled: #475569;
+  --text-disabled: #94a3b8;
+
+  --bg-primary: var(--gray-900);
+  --text-primary: var(--text-default);
+
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root[data-theme="light"] {
+  --gray-100: #020617;
+  --gray-200: #0f172a;
+  --gray-300: #1e293b;
+  --gray-400: #334155;
+  --gray-500: #455372;
+  --gray-600: #64748b;
+  --gray-700: #94a3b8;
+  --gray-800: #e2e8f0;
+  --gray-900: #f8fafc;
+
+  --text-default: #0f172a;
+  --text-muted: #475569;
+
+  --link-color: #047857;
+  --link-hover: #065f46;
+
+  --primary-light: #059669;
+  --primary: #047857;
+  --primary-dark: #064e3b;
+
+  --text-over-primary: #ecfdf5;
+
+  --bg-primary: #f8fafc;
+  --text-primary: #0f172a;
+}

@@ -1,0 +1,148 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2.4rem 0 3.2rem;
+  width: 100%;
+  max-width: 90rem;
+}
+
+.search {
+  flex: 1 1 24rem;
+  min-width: 18rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  border: 2px solid var(--gray-600);
+  background: var(--gray-800);
+  color: var(--text-default);
+  font-size: 1.6rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search:focus {
+  border-color: var(--primary);
+}
+
+.filters {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 1rem 1.6rem;
+  border-radius: 999px;
+  border: 2px solid var(--gray-600);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+  border-color: var(--primary);
+  color: var(--text-default);
+}
+
+.filterBtn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--text-over-primary);
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+
+.tableWrap {
+  width: 100%;
+  max-width: 96rem;
+  overflow-x: auto;
+  border-radius: 1.2rem;
+  border: 1px solid var(--gray-700);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+}
+
+.table th,
+.table td {
+  padding: 1.4rem 1.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-700);
+}
+
+.table th {
+  background: var(--gray-800);
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.2rem;
+}
+
+.table tbody tr:hover {
+  background: var(--gray-800);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.completed {
+  background: color-mix(in srgb, var(--success) 25%, transparent);
+  color: var(--success);
+}
+
+.interrupted {
+  background: color-mix(in srgb, var(--error) 25%, transparent);
+  color: #f87171;
+}
+
+.running {
+  background: color-mix(in srgb, var(--info) 25%, transparent);
+  color: var(--info);
+}
+
+@media (max-width: 720px) {
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: block;
+    margin-bottom: 1.6rem;
+    border: 1px solid var(--gray-700);
+    border-radius: 0.8rem;
+    padding: 1rem;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border: none;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+}

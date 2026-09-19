@@ -1,0 +1,7 @@
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem; /*Display-flex não temos 'padding' */
+    justify-content: center;
+}
+ 

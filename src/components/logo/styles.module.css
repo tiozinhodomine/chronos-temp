@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  justify-content: center;
+  padding-top: 3.2rem;
+}
+
+.logoLink {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: 800;
+  font-size: 3.6rem;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+  transition: all 0.2s ease-in-out;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.logoLink:hover {
+  filter: brightness(1.2);
+  transform: scale(1.03);
+}
+
+.logoLink svg {
+  width: 5.6rem;
+  height: 5.6rem;
+}

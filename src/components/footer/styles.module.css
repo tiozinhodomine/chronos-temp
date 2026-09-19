@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    gap: 1.6rem;
+    padding: 2rem 0;
+  }
+  
+  .footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer a:hover {
+    color: var(--text-muted);
+    text-decoration: underline;
+  }

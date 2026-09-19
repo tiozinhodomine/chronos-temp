@@ -1,0 +1,11 @@
+.container {
+  font-size: clamp(4.8rem, 12vw, 8.8rem);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  text-align: center;
+  color: var(--primary);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  padding: 1.6rem 0 0.8rem;
+  text-shadow: 0 0 40px color-mix(in srgb, var(--primary) 35%, transparent);
+}
