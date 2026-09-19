@@ -13,7 +13,7 @@ Aplicação de timer Pomodoro feita com **React + TypeScript + Vite**.
 - Páginas com **React Router**: Home, Histórico, Sobre o Pomodoro e 404
 - Context + `useReducer` com actions tipadas
 - Persistência em **localStorage** (dados não somem no F5)
-- Tema claro/escuro + identidade visual própria (cores, tipografia, logo)
+- Tema claro/escuro + identidade visual própria (**desafios**)
 
 ## Como rodar
 
